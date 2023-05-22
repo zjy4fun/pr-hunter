@@ -22,11 +22,9 @@ export default {
                     labels: issue.labels,
                 }
             })
-            if(issues.length > 0) {
-                return {
-                    full_name: item.full_name,
-                    issues
-                }
+            return {
+                full_name: item.full_name,
+                issues
             }
         }))
         console.log(issueList)
